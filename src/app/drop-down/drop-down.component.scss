@@ -1,0 +1,31 @@
+@import '../app.component.scss';
+
+.dropdown {    
+    padding: 50px;
+    border: $border;    
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 562px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__content {
+        padding-left: 20px;
+        border-right: $border;        
+    }
+}
+
+select {
+    margin-right: 3px;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #0275d8;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://stackoverflow.com/favicon.ico) 96% / 15% no-repeat #ffbc04;
+  }
+
+  

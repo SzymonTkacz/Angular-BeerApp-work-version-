@@ -1,0 +1,19 @@
+$border: 1px solid #0275d8;
+
+.beer-container {
+    max-width: 900px;
+    min-width: 622px;
+    padding-inline: 30px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+}
+
+.theme-light {
+    background-color: #ffbc04;
+    color: black;
+}
+
+.theme-dark {
+    background-color: black;
+    color: #ffbc04;
+}

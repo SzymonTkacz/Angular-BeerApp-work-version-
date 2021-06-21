@@ -1,0 +1,26 @@
+<div class="options">
+    <div class="options__button">
+        <input type="submit" (click)="showOptions()" value="Options" class="btn btn-outline-primary" />
+    </div>
+    <div style="display: {{optionsDisplay}}" class="options__content">
+        <div class="options__item">
+            <h5>Order by</h5>
+            <select [(ngModel)]="optionsService.orderByValue" (ngModelChange)="changeOrderBy($event)">
+                <option *ngFor="let order of orderBy">{{order}}</option>
+            </select>
+        </div>
+        <div class="options__item">
+            <h5>Items in list</h5>
+            <select [(ngModel)]="optionsService.listCountValue" (ngModelChange)="changeListCount($event)">
+                <option *ngFor="let count of listCount">{{count}}</option>
+            </select>
+        </div>
+        <div class="options__item">
+            <h5>Color theme</h5>
+            <label class="switch">
+                <input type="checkbox" (change)="changeColors()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+</div>
