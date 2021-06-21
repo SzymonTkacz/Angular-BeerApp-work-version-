@@ -25,13 +25,5 @@ export class DataService {
     var response = this.http.get<BreweryDetails[]>(
       `https://api.openbrewerydb.org/breweries?by_type=${this.type}`)
       return response
-  }  
-
-  getItems() {
-    this.http.get(this.breweriesUrl).pipe(map(data => {})).subscribe(result => {
-      console.log('results:')
-      console.log(result);
-    });
-  }
+  }   
 }
-
